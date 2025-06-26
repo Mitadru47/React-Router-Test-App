@@ -10,7 +10,7 @@ function Spinach(){
 		<>
 		
 			<p>Hi, I am Spinach! Popeye loves to eat me!</p>
-			<Link to="/">Go back</Link>
+			<Link to="/">Go back to the Main Page</Link>
 		
 		</>
 	);
