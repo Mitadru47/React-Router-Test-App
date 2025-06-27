@@ -10,8 +10,18 @@ function Spinach(){
 		<>
 		
 			<p>Hi, I am Spinach! Popeye loves to eat me!</p>
-			<Link to="/">Go back to the Main Page</Link>
 		
+			<nav>
+
+				<ul>
+					
+					<li><Link to="/">Go back to the Main Page</Link></li>
+					<li><Link to="/profile">Revert to Default Outlet</Link></li>
+			
+				</ul>
+			
+			</nav>
+
 		</>
 	);
 }

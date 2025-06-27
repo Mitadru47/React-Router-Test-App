@@ -9,6 +9,8 @@ import Profile from './components/Profile.jsx';
 import Popeye from './components/Popeye.jsx';
 import Spinach from './components/Spinach.jsx';
 
+import DefaultProfile from './components/DefaultProfile.jsx';
+
 const router = createBrowserRouter([
 
   {
@@ -28,8 +30,10 @@ const router = createBrowserRouter([
     children: [
 
       { path: "popeye", element: <Popeye /> },
-      { path: "spinach", element: <Spinach /> }
-
+      { path: "spinach", element: <Spinach /> },
+      
+      { index: true, element: <DefaultProfile />}
+      
     ]
 
   }
