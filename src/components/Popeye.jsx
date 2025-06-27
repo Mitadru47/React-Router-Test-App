@@ -10,7 +10,17 @@ function Popeye(){
 		<>
 		
 			<p>Hi, I am Popeye! I love to eat Spinach!</p>
-			<Link to="/">Go back to the Main Page</Link>
+
+			<nav>
+
+				<ul>
+					
+					<li><Link to="/">Go back to the Main Page</Link></li>
+					<li><Link to="/profile">Revert to Default Outlet</Link></li>
+			
+				</ul>
+			
+			</nav>
 		
 		</>
 	);
