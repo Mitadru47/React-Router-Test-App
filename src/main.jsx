@@ -10,13 +10,18 @@ import Popeye from './components/Popeye.jsx';
 import Spinach from './components/Spinach.jsx';
 
 import DefaultProfile from './components/DefaultProfile.jsx';
+import DefaultError from './components/DefaultError.jsx';
 
 const router = createBrowserRouter([
 
   {
 
     path: "/",
-    element: <App />
+    element: <App />,
+
+    // Error Element
+
+    errorElement: <DefaultError />
 
   },
 

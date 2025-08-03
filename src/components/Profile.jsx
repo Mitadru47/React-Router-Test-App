@@ -1,4 +1,4 @@
-import { Link, Outlet, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Popeye from "./Popeye";
 import Spinach from "./Spinach";
 import DefaultProfile from "./DefaultProfile";
