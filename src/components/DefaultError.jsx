@@ -12,11 +12,13 @@ function DefaultError(){
       <nav>
 
         <ul>
+
           <li>
 
             <Link to="/">Go back to the Main Page</Link>
 
           </li>
+          
         </ul>
 
       </nav>

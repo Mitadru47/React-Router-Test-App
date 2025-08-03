@@ -20,7 +20,6 @@ const router = createBrowserRouter([
     element: <App />,
 
     // Error Element
-
     errorElement: <DefaultError />
 
   },

@@ -30,7 +30,6 @@ function Profile(){
 			<h2>Current Outlet:</h2>
 
 			{/* Dynamic Segment(s) */}
-
       { name === "popeye" ? <Popeye /> : (name === "spinach" ? <Spinach /> : <DefaultProfile />) }
 		
 		</div>
