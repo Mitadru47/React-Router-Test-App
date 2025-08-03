@@ -22,19 +22,10 @@ const router = createBrowserRouter([
 
   {
 
-    path: "profile",
+    // Dynamic Segment
+
+    path: "profile/:name",
     element: <Profile />,
-
-    // Adding Nested Routes
-
-    children: [
-
-      { path: "popeye", element: <Popeye /> },
-      { path: "spinach", element: <Spinach /> },
-      
-      { index: true, element: <DefaultProfile />}
-      
-    ]
 
   }
 

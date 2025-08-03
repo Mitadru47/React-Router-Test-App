@@ -1,6 +1,11 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useParams } from "react-router-dom";
+import Popeye from "./Popeye";
+import Spinach from "./Spinach";
+import DefaultProfile from "./DefaultProfile";
 
 function Profile(){
+
+  const { name } = useParams();
 
 	return(
 
@@ -24,11 +29,10 @@ function Profile(){
 
 			<h2>Current Outlet:</h2>
 
-			{/* Dynamic Segment */}
-			{/* Using an <Outlet /> component to render child components through nested routes */}
-			
-			<Outlet />
+			{/* Dynamic Segment(s) */}
 
+      { name === "popeye" ? <Popeye /> : (name === "spinach" ? <Spinach /> : <DefaultProfile />) }
+		
 		</div>
 	);
 }
