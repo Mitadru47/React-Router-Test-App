@@ -1,6 +1,13 @@
-import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { Link, useOutletContext } from "react-router-dom";
 
 function Spinach(){
+
+  // Using the useOutletContext() hook to get contents of the parent <Outlet /> context.
+  const [ randomStateTest, setRandomStateTest ] = useOutletContext();
+
+  // Updating the state of child and in-turn, parent.
+  useEffect(() => setRandomStateTest(2), []);
 
 	return(
 
@@ -10,6 +17,7 @@ function Spinach(){
 		<>
 		
 			<p>Hi, I am Spinach! Popeye loves to eat me!</p>
+      <h3>{"Child State: " + randomStateTest}</h3>
 		
 			<nav>
 
